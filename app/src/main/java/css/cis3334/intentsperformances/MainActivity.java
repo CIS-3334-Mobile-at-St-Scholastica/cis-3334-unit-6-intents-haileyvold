@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn2Web = (Button) findViewById(R.id.button1WebInfo);
+        btn2Web = (Button) findViewById(R.id.button2WebInfo);
         btn2Web.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn3Web = (Button) findViewById(R.id.button1WebInfo);
+        btn3Web = (Button) findViewById(R.id.button3WebInfo);
         btn3Web.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 calIntent.setType("vnd.android.cursor.item/event");
                 calIntent.putExtra(CalendarContract.Events.TITLE, "SAL Colloquium 'The Robot Next Door'");
                 calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Tower Hall 4119");
-                GregorianCalendar begDate = new GregorianCalendar(2017, 2, 24, 3, 40);
-                GregorianCalendar endDate = new GregorianCalendar(2017, 2, 24, 4, 40);
+                GregorianCalendar begDate = new GregorianCalendar(2017, 2, 24, 15, 40);
+                GregorianCalendar endDate = new GregorianCalendar(2017, 2, 24, 16, 40);
                 calIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME,
                         begDate.getTimeInMillis());
                 calIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME,
@@ -83,17 +83,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn2Calendar = (Button) findViewById(R.id.button1Calendar);
+        btn2Calendar = (Button) findViewById(R.id.button2Calendar);
         btn2Calendar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
                 textViewStatus.setText("Code should set a calendar event for performance 2");
                 Intent calIntent = new Intent(Intent.ACTION_INSERT);
                 calIntent.setType("vnd.android.cursor.item/event");
-                calIntent.putExtra(CalendarContract.Events.TITLE, "SAL Colloquium 'The Robot Next Door'");
-                calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Tower Hall 4119");
-                GregorianCalendar begDate = new GregorianCalendar(2017, 2, 24, 3, 40);
-                GregorianCalendar endDate = new GregorianCalendar(2017, 2, 24, 4, 40);
+                calIntent.putExtra(CalendarContract.Events.TITLE, "Justice and U.S. Immigration Policy with Aviva Chomsky'");
+                calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Mitchell Auditorium");
+                GregorianCalendar begDate = new GregorianCalendar(2017, 3, 7, 19, 30);
+                GregorianCalendar endDate = new GregorianCalendar(2017, 3, 7, 21, 30);
                 calIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME,
                         begDate.getTimeInMillis());
                 calIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME,
@@ -103,17 +103,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn3Calendar = (Button) findViewById(R.id.button1Calendar);
+        btn3Calendar = (Button) findViewById(R.id.button3Calendar);
         btn3Calendar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
                 textViewStatus.setText("Code should set a calendar event for performance 3");
                 Intent calIntent = new Intent(Intent.ACTION_INSERT);
                 calIntent.setType("vnd.android.cursor.item/event");
-                calIntent.putExtra(CalendarContract.Events.TITLE, "SAL Colloquium 'The Robot Next Door'");
-                calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Tower Hall 4119");
-                GregorianCalendar begDate = new GregorianCalendar(2017, 2, 24, 3, 40);
-                GregorianCalendar endDate = new GregorianCalendar(2017, 2, 24, 4, 40);
+                calIntent.putExtra(CalendarContract.Events.TITLE, "The State of Native Nations with Karen Diver ");
+                calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Mitchell Auditorium");
+                GregorianCalendar begDate = new GregorianCalendar(2017, 3, 30, 19, 30);
+                GregorianCalendar endDate = new GregorianCalendar(2017, 3, 30, 21, 30);
                 calIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME,
                         begDate.getTimeInMillis());
                 calIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME,
