@@ -16,8 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Upcoming Events"
-        android:textSize="18sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textAlignment="center" />
+
+    <TextView
+        android:text=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSpace" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -28,8 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/spotlight1"
-            android:id="@+id/imageButton"
-            android:layout_weight="1" />
+            android:id="@+id/imageButton" />
 
         <TextView
             android:text="SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119"
@@ -69,5 +74,106 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewStatus" />
+        android:id="@+id/textViewStatus"
+        android:text=" " />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/immigration"
+            android:id="@+id/imageButton7" />
+
+        <TextView
+            android:text="Justice and U.S. Immigration Policy with Aviva Chomsky \nTuesday, March 7, 2017, 7:30 - 9:30 p.m. \nMitchell Auditorium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView13"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Web Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3WebInfo"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Add To Calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3Calendar" />
+
+        <Button
+            android:text="Map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3Map"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text=" "
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2Status" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/nations"
+            android:id="@+id/imageButton6" />
+
+        <TextView
+            android:text="The State of Native Nations with Karen Diver \nThursday, March 30, 2017, 7:30 - 9:30 p.m. \nMitchell Auditorium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView11"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:text="Web Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2WebInfo"
+            android:layout_weight="0.46" />
+
+        <Button
+            android:text="Add To Calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2Calendar" />
+
+        <Button
+            android:text="Map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2Map" />
+
+    </LinearLayout>
+
 </LinearLayout>
